@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".WeatherMainActivity">
+
+
+        <ImageView
+            android:id="@+id/weather_title"
+            android:layout_width="wrap_content"
+            android:layout_height="123dp"
+            android:layout_weight="1"
+            android:src="@drawable/weather_title"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/week" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bmeuljirottf"
+            android:text="주간 날씨예보"
+            android:textColor="#5b68b3"
+            android:textSize="30dp" />
+            <TextView
+                android:fontFamily="@font/bmeuljirottf"
+                android:layout_width="wrap_content"
+
+                android:textSize="18dp"
+                android:layout_height="25dp"
+                android:text="이번주 청파동의 날씨를 미리 확인해보세요!"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:background="#359eb0"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_date0"
+            android:textSize="23dp"
+            android:text="day1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_day1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:id="@+id/iv_day1_am_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day1_am"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day1_temp0"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:text="day1 오전 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day1_info0"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_day1_pm_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day1_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day1_temp1"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_margin="10dp"
+                        android:text="day1 오후 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day1_info1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!--day1-->
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:background="#359eb0"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_date1"
+            android:textSize="23dp"
+            android:text="day2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_day2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:id="@+id/iv_day2_am_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day2_am"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day2_temp0"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:text="day1 오전 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day2_info0"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_day2_pm_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day2_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day2_temp1"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_margin="10dp"
+                        android:text="day1 오후 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day2_info1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!--2-->
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:background="#359eb0"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_date2"
+            android:textSize="23dp"
+            android:text="day3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_day3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:id="@+id/iv_day3_am_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day3_am"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day3_temp0"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:text="day1 오전 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day3_info0"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout> <!--day1-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_day3_pm_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day3_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day3_temp1"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_margin="10dp"
+                        android:text="day1 오후 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day3_info1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!--3-->
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:background="#359eb0"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_date3"
+            android:textSize="23dp"
+            android:text="day4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_day4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:id="@+id/iv_day4_am_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day4_am"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day4_temp0"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:text="day1 오전 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day4_info0"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_day4_pm_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day4_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day4_temp1"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_margin="10dp"
+                        android:text="day1 오후 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day4_info1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!--4-->
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="10dp"
+            android:background="#359eb0"
+            android:textColor="#ffffff"
+            android:id="@+id/tv_date4"
+            android:textSize="23dp"
+            android:text="day5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_day5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+                <ImageView
+                    android:id="@+id/iv_day5_am_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day5_am"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day5_temp0"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:text="day1 오전 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day5_info0"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_day5_pm_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_day5_pm"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="#cff2b8">
+                    <TextView
+                        android:id="@+id/tv_day5_temp1"
+                        android:textSize="20dp"
+                        android:textColor="#4e7832"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_margin="10dp"
+                        android:text="day1 오후 온도"/>
+                    <TextView
+                        android:id="@+id/tv_day5_info1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000000"
+                        android:text="정보"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout> <!--5-->
+
+
+        <TextView
+            android:fontFamily="@font/bmeuljirottf"
+            android:layout_weight="5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:id="@+id/textView1"
+            android:maxLines = "100"
+            android:scrollbars = "vertical"
+             />
+    </LinearLayout>
+
+</ScrollView>
